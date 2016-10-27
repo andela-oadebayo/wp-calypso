@@ -33,6 +33,12 @@
 	}
 }
 
+.editor-media-modal-detail.is-original-loaded {
+	.image-preloader {
+		opacity: 0.5;
+	}
+}
+
 .editor-media-modal-detail__preview-wrapper {
 	flex: 2 0 0%;
 	position: relative;
@@ -144,21 +150,9 @@
 		transform: scaleX( -1 );
 	}
 
-	&.is-restoring .gridicon {
-		animation-duration: 0.5s;
-  		animation-name: ninetyDegRotation;
-  		animation-fill-mode: forwards;
+	&.is-ready .gridicon {
+		transform: scaleX( 1 );
 	}
-}
-
-@keyframes ninetyDegRotation {
-  from {
-    transform: scaleX( -1 ) rotate( 0 );
-  }
-
-  to {
-    transform: scaleX( -1 ) rotate( 90deg );
-  }
 }
 
 .editor-media-modal-detail__sidebar {
