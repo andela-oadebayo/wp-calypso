@@ -31,6 +31,7 @@ class Pressable extends Component {
 			fieldValues,
 			onFieldChange,
 			isSubmitting,
+			submit,
 		} = this.props;
 
 		return (
@@ -66,7 +67,7 @@ class Pressable extends Component {
 					/>
 				</CompactCard>
 				<SubmitSection
-					submit={ this.props.submit }
+					submit={ submit }
 					isSubmitting={ isSubmitting }
 				/>
 			</div>
